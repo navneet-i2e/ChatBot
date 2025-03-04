@@ -1,0 +1,125 @@
+.chatbotContainer {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Chat Header (Centered Icon & Text) */
+  .chatHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers both text and icon */
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 16px;
+    gap: 10px; /* Adds space between icon and text */
+  }
+  
+  .botIcon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Chat Body */
+  .chatBody {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background: #e9ecef;
+    scrollbar-width: thin;
+  }
+  
+  /* Chat Bubbles */
+  .message {
+    max-width: 75%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .user {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+    border-top-right-radius: 2px;
+  }
+  
+  .bot {
+    background: white;
+    border: 1px solid #ced4da;
+    align-self: flex-start;
+    border-top-left-radius: 2px;
+  }
+  
+  /* Timestamp */
+  .timestamp {
+    display: block;
+    font-size: 10px;
+    color: gray;
+    text-align: right;
+    margin-top: 3px;
+  }
+  
+  /* Typing Indicator (Animated Dots) */
+  .typingIndicator {
+    display: flex;
+    gap: 3px;
+    padding: 5px;
+    color: gray;
+  }
+  
+  .typingIndicator span {
+    width: 5px;
+    height: 5px;
+    background: gray;
+    border-radius: 50%;
+    animation: typing 1.2s infinite ease-in-out;
+  }
+  
+  .typingIndicator span:nth-child(1) { animation-delay: 0s; }
+  .typingIndicator span:nth-child(2) { animation-delay: 0.2s; }
+  .typingIndicator span:nth-child(3) { animation-delay: 0.4s; }
+  
+  @keyframes typing {
+    0% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.3); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.5; }
+  }
+  
+  /* Chat Footer */
+  .chatFooter {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chatInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background: #f1f1f1;
+  }
+  
+  .sendButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
