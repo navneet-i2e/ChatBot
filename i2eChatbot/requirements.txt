@@ -1,0 +1,9 @@
+python-dotenv
+faiss-cpu
+langchain-huggingface
+langchain-groq
+langchain
+streamlit
+fastapi
+uvicorn
+langchain-community

@@ -1,0 +1,166 @@
+/* Chabot.module.css */
+
+/* Modal overlay */
+.modalOverlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal header */
+.modalHeader {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  padding: 12px 20px;
+}
+
+/* Close button */
+.closeButton {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Modal content and body (responsive styles) */
+@media (min-width: 576px) {
+  .chatModalContent {
+    max-height: 80vh;
+  }
+  .chatModalBody {
+    max-height: 60vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+}
+
+/* Bot message */
+.botMessage {
+  margin-bottom: 10px;
+}
+
+.botMessageText {
+  white-space: pre-line;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+/* User message container */
+.userMessageContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+/* User message bubble */
+.userMessageBubble {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 75%;
+  text-align: left;
+  word-wrap: break-word;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sources text */
+.sourcesText {
+  font-size: 14px;
+}
+
+/* Refresh button */
+.refreshButton {
+  color: #666;
+}
+
+/* Show all button */
+.showAllButton {
+  font-size: 12px;
+}
+
+/* Loading container */
+.loadingContainer {
+  position: relative;
+  overflow: hidden;
+  height: 8px;
+  background-color: rgb(226, 232, 240);
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Loading bar */
+.loadingBar {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(108, 91, 255),
+    rgb(73, 69, 255),
+    rgb(108, 91, 255),
+    transparent
+  );
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  border-radius: 12px;
+  transition: transform 0.1s linear;
+}
+
+/* Modal footer */
+.modalFooter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Input field */
+.inputField {
+  flex: 1;
+  background-color: #f0f8ff;
+  color: #333;
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Send button */
+.sendButton {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+/* Link card */
+.linkCard {
+  display: inline-block;
+  width: 200px;
+  min-height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+/* Link category */
+.linkCategory {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Link item */
+.linkItem {
+  color: #007bff;
+  font-size: 12px;
+  word-break: break-all;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Ask AI button */
+.askAIButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
